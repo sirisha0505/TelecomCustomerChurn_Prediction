@@ -125,7 +125,7 @@ def app():
         # Perform label encoding on categorical columns
         new_data = label_encode(new_data)
 
-        # Make predictions using the loaded XGBoost model
+        # Make predictions using the loaded RandomForest  model
         predictions = model.predict_proba(new_data)
 
         # Display the prediction result
